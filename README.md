@@ -26,10 +26,10 @@
     * Работа с БД с помощью `SQLAlchemy`
     * БД - `SQLite3` -> `PostgreSQL`
 - Фронтенд
-    * Telegram-бот
+    * Telegram-бот `Python3.9` + `aiogram2`
     * Web App с использованием `React`
 - Разворачивание проекта
-    * `Docker`
+    * `docker-compose`
 
 
 ## БД
