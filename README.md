@@ -103,5 +103,8 @@
 
 ## Архитектура проекта
 
+![image](https://github.com/Eytes/InvestBot/assets/67365128/e30e26a7-6020-45e6-a920-7898b138738b)
+
+![image](https://github.com/Eytes/InvestBot/assets/67365128/4fa756f4-0c87-43c3-b361-e7c35f43e096)
 
 
