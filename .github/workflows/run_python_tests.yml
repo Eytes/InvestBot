@@ -1,6 +1,12 @@
 name: Run tests with pytest
 run-name: ${{ github.event_name }} to ${{ github.ref_name }} by @${{ github.actor }}
-on: push
+on: 
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    branches-ignore:
+      - main
 jobs:
   lint:
     if: ${{ github.event_name == 'push' }}
