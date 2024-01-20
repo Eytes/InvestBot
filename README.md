@@ -25,8 +25,11 @@
     * Фреймворк `FastAPI`
     * Работа с БД с помощью `SQLAlchemy`
     * БД - `SQLite3` -> `PostgreSQL`
+    * Тестирование с помощью `pytest`
+    * Форматтер `Black`
+    * Линтер `flake8`
 - Фронтенд
-    * Telegram-бот `Python3.9` + `aiogram2`
+    * Telegram-бот `Python3.9` + `aiogram2` -> `Python3.11` + `aiogram3`
     * Web App с использованием `React`
 - Разворачивание проекта
     * `docker-compose`
