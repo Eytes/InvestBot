@@ -24,7 +24,11 @@
     * Пакетный менедженр `Poetry`
     * Фреймворк `FastAPI`
     * Работа с БД с помощью `SQLAlchemy`
-    * БД - `SQLite3` -> `PostgreSQL`
+    * БД:
+      * `SQLite3` -> `PostgreSQL`
+      * миграции:
+        * `alembic`
+        * формат именнования файла с миграцией: `%%(year)d_%%(month).2d_%%(day).2d_%%(hour).2d%%(minute).2d-%%(rev)s_%%(slug)s`
     * Тестирование с помощью `pytest`
     * Форматтер `Black`
     * Линтер `flake8`
