@@ -24,9 +24,16 @@
     * Пакетный менедженр `Poetry`
     * Фреймворк `FastAPI`
     * Работа с БД с помощью `SQLAlchemy`
-    * БД - `SQLite3` -> `PostgreSQL`
+    * БД:
+      * `SQLite3` -> `PostgreSQL`
+      * миграции:
+        * `alembic`
+        * формат именнования файла с миграцией: `%%(year)d_%%(month).2d_%%(day).2d_%%(hour).2d%%(minute).2d-%%(rev)s_%%(slug)s`
+    * Тестирование с помощью `pytest`
+    * Форматтер `Black`
+    * Линтер `flake8`
 - Фронтенд
-    * Telegram-бот `Python3.9` + `aiogram2`
+    * Telegram-бот `Python3.9` + `aiogram2` -> `Python3.11` + `aiogram3`
     * Web App с использованием `React`
 - Разворачивание проекта
     * `docker-compose`
@@ -114,4 +121,7 @@
 
 ![image](https://github.com/Eytes/InvestBot/assets/67365128/4fa756f4-0c87-43c3-b361-e7c35f43e096)
 
+## GitFlow
+
+![image](https://github.com/Eytes/InvestBot/assets/67365128/48ca2d3d-12be-4ecb-bf32-828ccc9a30c0)
 
