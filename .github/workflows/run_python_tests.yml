@@ -4,7 +4,7 @@ on: push
 jobs:
   lint:
     if: ${{ github.event_name == 'push' }}
-    uses: ./.github/workflows/linting.yml
+    uses: ./.github/workflows/python_linter.yml
 
   testing:
     name: Testing
