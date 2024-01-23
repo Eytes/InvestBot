@@ -121,4 +121,7 @@
 
 ![image](https://github.com/Eytes/InvestBot/assets/67365128/4fa756f4-0c87-43c3-b361-e7c35f43e096)
 
+## GitFlow
+
+![image](https://github.com/Eytes/InvestBot/assets/67365128/48ca2d3d-12be-4ecb-bf32-828ccc9a30c0)
 
