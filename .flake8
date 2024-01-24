@@ -1,0 +1,13 @@
+[flake8]
+exclude =
+    .git*
+    *docker*
+    Dockerfile
+    alembic
+    
+statistics = True 
+
+show-source = True
+
+max-line-length = 120
+  
