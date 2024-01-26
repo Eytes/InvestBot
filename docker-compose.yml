@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:16
+    container_name: postgres
+    env_file: .docker-compose-backend-env
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: always
+    ports:
+      - "5432:5432"
+    networks:
+      - backtier
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+networks:
+  backtier:
+    driver: bridge
+
+volumes:
+  db-data:
