@@ -14,14 +14,22 @@ class Project(
     CreationDateMixin,
     LevelMixin,
 ):
-    info: Mapped[str] = mapped_column(
+    short_info: Mapped[str | None] = mapped_column(
         nullable=True,
     )
 
-    stage: Mapped[str] = mapped_column(
+    stage: Mapped[str | None] = mapped_column(
         nullable=True,
     )
 
-    description: Mapped[str] = mapped_column(
+    full_info: Mapped[str | None] = mapped_column(
+        nullable=True,
+    )
+
+    targets: Mapped[list[str] | None] = mapped_column(
+        nullable=True,
+    )
+
+    links: Mapped[dict | None] = mapped_column(
         nullable=True,
     )
