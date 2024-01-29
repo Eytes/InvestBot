@@ -8,7 +8,7 @@ from backend.project_manager.app.core.models.mixins import (
 )
 
 
-class User(
+class Consumer(
     Base,
     IdMixin,
     CreationDateMixin,
