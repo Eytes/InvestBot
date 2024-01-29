@@ -15,12 +15,20 @@ class Token(
     IdMixin,
     LevelMixin,
 ):
+    project_id: Mapped[int] = mapped_column(
+        ForeignKey("projects.id"),
+        nullable=False,
+    )
+
+    user_id: Mapped[int] = mapped_column(
+        ForeignKey("users.id"),
+    )
+
     weight: Mapped[int] = mapped_column(
         nullable=False,
         default=1,
     )
 
-    project_id: Mapped[int] = mapped_column(
-        ForeignKey("projects.id"),
+    price: Mapped[int] = mapped_column(
         nullable=False,
     )
