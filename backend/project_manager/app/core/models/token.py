@@ -1,3 +1,4 @@
+from uuid import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from sqlalchemy import ForeignKey
@@ -15,13 +16,14 @@ class Token(
     IdMixin,
     LevelMixin,
 ):
-    project_id: Mapped[int] = mapped_column(
+    project_id: Mapped[UUID] = mapped_column(
         ForeignKey("projects.id"),
         nullable=False,
     )
 
-    user_id: Mapped[int] = mapped_column(
+    user_id: Mapped[UUID | None] = mapped_column(
         ForeignKey("users.id"),
+        nullable=True,
     )
 
     weight: Mapped[int] = mapped_column(
