@@ -1,7 +1,4 @@
 from uuid import UUID
-from sqlalchemy.orm import Mapped, mapped_column, relationship
-
-from sqlalchemy import ForeignKey
 
 from backend.project_manager.app.core.models.base import Base
 from backend.project_manager.app.core.models.mixins import (
@@ -9,6 +6,8 @@ from backend.project_manager.app.core.models.mixins import (
     IdMixin,
     LevelMixin,
 )
+from sqlalchemy import ForeignKey
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 
 class Token(
