@@ -17,3 +17,6 @@ __pycache__/
 # VSCode
 .vscode
 *.code-workspace
+
+# ssl certs
+certs
