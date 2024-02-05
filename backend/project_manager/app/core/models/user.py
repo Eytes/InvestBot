@@ -14,10 +14,6 @@ class User(
     CreationDateMixin,
     LevelMixin,
 ):
-    # email: Mapped[str] = mapped_column(
-    #     nullable=False,
-    #     unique=True,
-    # )
     tg_id: Mapped[int] = mapped_column(
         nullable=False,
         unique=True,
@@ -47,12 +43,12 @@ class User(
         nullable=True,
     )
 
-    donation_amount: Mapped[int | None] = mapped_column(
+    donation_amount: Mapped[int] = mapped_column(
         nullable=False,
         default=0,
     )
 
-    investment_amount: Mapped[int | None] = mapped_column(
+    investment_amount: Mapped[int] = mapped_column(
         nullable=False,
         default=0,
     )

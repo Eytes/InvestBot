@@ -1,8 +1,8 @@
 from datetime import datetime
 from uuid import UUID, uuid4
 
-from sqlalchemy.orm import Mapped, declared_attr, mapped_column
 from sqlalchemy import func
+from sqlalchemy.orm import Mapped, declared_attr, mapped_column
 
 
 class IdMixin:
