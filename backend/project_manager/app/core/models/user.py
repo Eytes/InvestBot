@@ -1,10 +1,11 @@
+from sqlalchemy.orm import Mapped, mapped_column
+
 from backend.project_manager.app.core.models.base import Base
 from backend.project_manager.app.core.models.mixins import (
     CreationDateMixin,
     IdMixin,
     LevelMixin,
 )
-from sqlalchemy.orm import Mapped, mapped_column
 
 
 class User(
