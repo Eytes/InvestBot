@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  db:
+  postgres:
     image: postgres:16
     container_name: postgres
     env_file: .docker-compose-backend-env
@@ -27,8 +27,22 @@ services:
     networks:
       - backtier
 
+  auth:
+    build: ./backend/auth
+    restart: always
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - backtier
+      - frontier
+    ports:
+      - "8001:8080"
+
 networks:
   backtier:
+    driver: bridge
+  frontier:
     driver: bridge
 
 volumes:
