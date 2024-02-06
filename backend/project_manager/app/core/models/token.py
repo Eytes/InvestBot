@@ -25,8 +25,10 @@ class Token(
     weight: Mapped[int] = mapped_column(
         nullable=False,
         default=1,
+        comment="Вес токена",
     )
 
     price: Mapped[int] = mapped_column(
         nullable=False,
+        comment="Цена токена",
     )
